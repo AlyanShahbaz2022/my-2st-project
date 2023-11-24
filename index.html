@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Political Website</h1>
+    </header>
+
+    <nav>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="about-link">About Us</a>
+        <a href="#" id="issues-link">Issues</a>
+        <a href="#" id="contact-link">Contact</a>
+    </nav>
+
+    <section id="main-content">
+        <h2>Welcome to our Political Website!</h2>
+        <p>This is a sample political website. You can customize the content based on your needs.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Political Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("home-link").addEventListener("click", function () {
+            document.getElementById("main-content").innerHTML = "<h2>Welcome to our Political Website!</h2><p>This is the home page content.</p>";
+        });
+
+        document.getElementById("about-link").addEventListener("click", function () {
+            document.getElementById("main-content").innerHTML = "<h2>About Us</h2><p>Learn more about our political party and its members.</p>";
+        });
+
+        document.getElementById("issues-link").addEventListener("click", function () {
+            document.getElementById("main-content").innerHTML = "<h2>Issues</h2><p>Explore our stance on various political issues.</p>";
+        });
+
+        document.getElementById("contact-link").addEventListener("click", function () {
+            document.getElementById("main-content").innerHTML = "<h2>Contact Us</h2><p>Reach out to us for more information or to get involved.</p>";
+        });
+    </script>
+
+</body>
+
+</html>
